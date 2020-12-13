@@ -1,10 +1,11 @@
 FROM ubuntu:latest
 
-RUN sudo mkdir -p /var/www/
-RUN sudo mkdir -p /var/www/DiscordEarsBot
+RUN apt -y update
+RUN mkdir -p /var/www/
+RUN mkdir -p /var/www/DiscordEarsBot
 WORKDIR /var/www/DiscordEarsBot
 
-RUN apt -y update
+
 RUN apt install -y git vim sox screen
 
 RUN apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
