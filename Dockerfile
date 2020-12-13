@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 
 RUN apt -y update
+RUN mkdir /var/www/
+RUN mkdir /var/www/DiscordEarsBot
 WORKDIR /var/www/DiscordEarsBot
 
 
